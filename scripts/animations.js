@@ -13,7 +13,7 @@ $(function(){
     .triggerHook("0.15")
     .setClassToggle(".bar", "person-color")
     .addTo(controller);
-    
+
 
       /*open head door*/
       headshot.onclick = function(){

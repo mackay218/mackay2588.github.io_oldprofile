@@ -196,7 +196,7 @@ h3{
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
- 
+
 #psuedoGlow{
   border-radius: 50%;
   -moz-box-shadow: 0 50px 50px 80px rgba(0,0,0,0.2);
@@ -400,6 +400,32 @@ h3{
 .red{
   background-color: #FF3C18;
 }
+
+.redImage{
+  background-image: url("images/quoteScreenShot.jpg");
+  background-size: cover;
+  transition: 0.2s;
+}
+
+.redGIF{
+  position: absolute;
+  top: 25%;
+  height: 50%;
+  width: 100%;
+  background-image: url("images/quote.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 0 10px 10px rgba(0,0,0,0.5), 0 -5px 10px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 10px 10px rgba(0,0,0,0.5), 0 -5px 10px rgba(0,0,0,0.5);
+  box-shadow: 0 10px 10px rgba(0,0,0,0.5), 0 -5px 10px rgba(0,0,0,0.5);
+}
+
+.redImage:hover{
+  background-image: url("images/quote.gif");
+  background-size: cover;
+  transition: 0.2s;
+}
+
 .yellow{
   background-color: #FFBB18;
 }
@@ -407,6 +433,7 @@ h3{
   font-family: "Sarpanch", sans-serif;
   font-style: oblique;
   font-size: 5vh;
+  text-shadow: -2px 0 rgba(0,0,0,0.8);
   color: #fff;
 }
 
@@ -420,6 +447,28 @@ h3{
   border-radius: 10%;
   will-change: transform;
 }
+
+.layer2Info p{
+  width: 60%;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+
+.projectLink{
+  font-family: "Titillium Web", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.projectLink:hover{
+  position: absolute;
+  bottom: 11%;
+  left: 45%;
+  text-shadow: -2px 5px rgba(0,0,0,0.5);
+}
+
 .projectImg{
   border: 5px solid #fff;
   border-radius: 10%;
@@ -429,6 +478,7 @@ h3{
     font-family: "Sarpanch", sans-serif;
     font-style: oblique;
     font-size: 5vh;
+    text-shadow: -2px 0 #000;
     color: #fff;
   }
   .fullScreenProject{
@@ -451,6 +501,7 @@ h3{
     font-family: "Sarpanch", sans-serif;
     font-style: oblique;
     font-size: 5vw;
+    text-shadow: -2px 0 #000;
     color: #fff;
   }
 
