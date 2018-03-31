@@ -1183,6 +1183,19 @@ body{
     border-bottom: 5px solid rgba(255,255,255,0.2);
     z-index: 1;
   }
+
+  .darkTint{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .darkTint:hover{
+    opacity: 0;
+  }
+
   #blue1{
     grid-row: 1/2;
     grid-column: 1/2;
@@ -1246,6 +1259,13 @@ body{
     width: 90vw;
     transition: 0.5s;
   }
+
+  .projectLink{
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+  }
+
   .closeBtn{
     position: absolute;
     top: 0;
@@ -1286,9 +1306,8 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    height: 50vh;
-    width: 50vw;
-    background: linear-gradient(to bottom right, transparent, rgba(0,0,0,0.5));
+    height: 100%;
+    width: 100%;
   }
 
   .darkTint:hover{
