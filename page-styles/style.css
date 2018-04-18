@@ -299,14 +299,7 @@ h3{
   font-size: 50%;
   color: #fff;
 }
-.g{
-  width: 1vw;
-  height: 1vh;
-  position: relative;;
-  top: 30px;
-  left:150px;
 
-}
 .h{
   width: 1vw;
   height: 1vh;
@@ -688,7 +681,7 @@ h4{
 }
 .formInput{
   font-family: "Titillium Web", sans-serif;
-  font-size: 16px;
+  font-size: 4vh;
   outline: none;
   background-color: rgba(255,255,255,0.8);
   border: 2px solid #178EB6;
