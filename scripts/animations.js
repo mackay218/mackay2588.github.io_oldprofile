@@ -66,7 +66,7 @@ $(function(){
   headTl.add(aboutOpenTl, 1);
   headTl.add(TweenLite.from(innerFrame, 0.1, {opacity: 0}), "-=0.6");
   headTl.add(TweenLite.from("#aboutMeText", 0.05, {opacity: 0}),"-=1");
-  headTl.add(TweenLite.from("#headInstruction", 0.05, {opacity: 0}), "+=12");
+  headTl.add(TweenLite.from("#headInstruction", 0.05, {opacity: 0}), "+=9");
   headTl.add(TweenLite.from("#workInstruction", 0.05, {opacity: 0}), "+=1");
 
   var person2 = new ScrollMagic.Scene({triggerElement: "#person"})
