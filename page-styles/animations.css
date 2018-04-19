@@ -38,28 +38,35 @@
 }
 
 /* logo */
-.heroLogo{
-  -webkit-transition: 2s;
-  transition: 2s;
-  -webkit-transform: rotateX(360deg) rotateY(360deg);
-  transform: rotate3d(-1,1,-1, 360deg);
-
-  -webkit-transform-origin: 100% 100%;
-  transform-origin: right 0%;
+@keyframes glow{
+  from, to {}
+  0%, 25% { -webkit-text-stroke: 5px rgba(255,255,255,0.2);}
+  25%, 26% { -webkit-text-stroke: 1px rgba(255,255,255,0.5);}
+  26%, 35% { -webkit-text-stroke: 8px rgba(255,255,255,0.2);}
+  35%, 65% { -webkit-text-stroke: 10px rgba(255,255,255,0.2);}
+  65%, 66% { -webkit-text-stroke: 8px rgba(255,255,255,0.2);}
+  66%, 67% { -webkit-text-stroke: 1px rgba(255,255,255,0.5);}
+  68%, 80% { -webkit-text-stroke: 10px rgba(255,255,255,0.2);}
+  80%, 90% { -webkit-text-stroke: 8px rgba(255,255,255,0.2);}
+  90%, 91% {-webkit-text-stroke: 10px rgba(255,255,255,0.2);}
+  91%, 92% { -webkit-text-stroke: 5px rgba(255,255,255,0.2);}
+  92%, 93% { -webkit-text-stroke: 8px rgba(255,255,255,0.2);}
+  93%, 100% { -webkit-text-stroke: 5px rgba(255,255,255,0.2);}
 }
-@media only screen and (min-width: 600px){
-  .heroLogo{
-    -webkit-transition: 2s;
-    transition: 2s;
-    -webkit-transform: rotateX(360deg) rotateY(360deg);
-    transform: rotate3d(1, -1, 1, 360deg);
-
-    -webkit-trasnform-origin: 0% 0%;
-    transform-origin: left 0%;
-
+@keyframes glow2{
+  from{
+    color: rgba(255,255,255,0.05);
+    text-shadow: 0px -6px 10px rgba(255,255,255,0.1);
+  }
+  to{
+    color: rgba(255,255,255,0.1);
+    text-shadow: 0px -6px 10px rgba(255,255,255,0.2);
   }
 }
 
+.icon-dmLogo{ animation: glow 10s linear infinite alternate; }
+.icon-dmLogo5px{ animation: glow 10s linear infinite alternate; }
+.icon-dmLogo{ animation: glow2 10s linear infinite alternate; }
 /*down arrow button*/
 
 @keyframes sink{
