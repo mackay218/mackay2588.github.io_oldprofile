@@ -1196,6 +1196,10 @@ body{
     opacity: 0;
   }
 
+  .darkTint:hover~.layer1Lable{
+    opacity: 0;
+  }
+
   #blue1{
     grid-row: 1/2;
     grid-column: 1/2;
@@ -1311,6 +1315,10 @@ body{
   }
 
   .darkTint:hover{
+    opacity: 0;
+  }
+
+  .darkTint:hover~.layer1Lable{
     opacity: 0;
   }
 
