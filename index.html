@@ -37,8 +37,6 @@
   <!--for using jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
   </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js">
-  </script>
 
   <!--font awesome icons-->
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -193,7 +191,7 @@
       </div>
     <div id="aboutWrapper">
       <div class="aboutClose" id="aboutMe">
-        <div id=innerFrame>
+        <div id="innerFrame" class="innerFrame">
           <p id="aboutMeText">
             My name is Daniel MacKay and I'm an aspiring Web Developer.
             I like to build functional responsive web apps with design that
@@ -212,10 +210,10 @@
   </div>
   <div class="section" id="projects">
     <div id="lowerProjectLayer">
-      <div class="projectLayer1 blue" id="blue1" onclick="showBlue()">
+      <div class="projectLayer1 blueImage" id="blue1" onclick="showBlue()">
         <div class="darkTint"></div>
         <div class="layer1Lable">
-          Project Blue
+          Wikipedia Viewer
         </div>
       </div>
       <div class="projectLayer1 green" id="green1" onclick="showGreen()">
@@ -240,15 +238,28 @@
 
     <div class="layer" id="upperProjectLayer">
       <div class="projectLayer2" id="blue2">
-        <div class="layer2Lable">Project Blue</div>
-        <div class="projectImg" id="blueImg"></div>
+        <div class="layer2Lable">Wikipedia Viewer</div>
+        <div class="projectImg blue" id="blueImg">
+          <div class="blueGIF"></div>
+        </div>
         <div class="layer2Info blue" id="blueInfo">
           <div class="closeBtn" onclick="showBlue()">Close</div>
+          <p>
+            A search tool for wikipedia.org which gives several results
+            for the search term entered. If the result is an article
+            a brief description is given. Each result provides a link
+            to the corresponding wikipedia page. Previous searches are
+            shown and can be returned to with a click. There is also
+            a button for a random wikipedia page.
+          </p>
+          <a class = "projectLink" target="_blank" href="https://mackay2588.github.io/WikipediaViewer">
+            Try it out.
+          </a>
         </div>
       </div>
       <div class="projectLayer2" id="green2">
         <div class="layer2Lable">Project Green</div>
-        <div class="projectImg" id="greenImg"></div>
+        <div class="projectImg green" id="greenImg"></div>
         <div class="layer2Info green" id="greenInfo">
           <div class="closeBtn" onclick="showGreen()">Close</div>
         </div>
@@ -261,11 +272,11 @@
         <div class="layer2Info red" id="redInfo">
             <div class="closeBtn" onclick="showRed()">Close</div>
             <p>
-              This quote generator gives quotes from philosophers, writers,
+                This quote generator gives quotes from philosophers, writers,
               celebrities and more. The quotes can be "Trumpified" with the push
-               a of button, "Trumpified" quotes occasionally even make sense.
-               Quotes both original and "Trumpifed" can be tweeted out with the
-               push of a button.
+              a of button, "Trumpified" quotes occasionally even make sense.
+              Quotes both original and "Trumpifed" can be tweeted out with the
+              push of a button.
             </p>
             <a class = "projectLink" target="_blank" href="https://mackay2588.github.io/QuoteGenerator">
               Try it out.
@@ -274,7 +285,7 @@
       </div>
       <div class="projectLayer2" id="yellow2">
         <div class="layer2Lable">Project Yellow</div>
-        <div class="projectImg" id="yellowImg"></div>
+        <div class="projectImg yellow" id="yellowImg"></div>
         <div class="layer2Info yellow" id="yellowInfo">
           <div class="closeBtn" onclick="showYellow()">Close</div>
         </div>

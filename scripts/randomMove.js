@@ -29,7 +29,7 @@ function animateDiv($target) {
     var newq = makeNewPosition($target.parent());
     var oldq = $target.offset();
     var speed = calcSpeed([oldq.top, oldq.left], newq);
-
+  
     $target.animate({
         top: newq[0],
         left: newq[1]
@@ -51,5 +51,4 @@ function calcSpeed(prev, next) {
     var speed = Math.ceil(greatest / speedModifier);
 
     return speed;
-
 }

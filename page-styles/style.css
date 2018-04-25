@@ -321,11 +321,7 @@ h3{
   top:20px;
   left:100px;
 }
-#helloWorld{
-  font-size: 20%;
-  font-family: "Sarpanch", sans-serif;
-  color: #fff;
-}
+
 #aboutMe{
   border: 10px solid #7c7c7c;
   box-shadow: inset 0 -5px 15px 5px rgba(0,0,0,0.2);
@@ -398,6 +394,31 @@ h3{
   background: linear-gradient(to bottom right, transparent, rgba(0,0,0,0.5));
 }
 
+.blueImage{
+  background-image: url("images/wikiScreenshot.jpg");
+  background-size: cover;
+  transition: 0.2s;
+}
+
+.blueGIF{
+  position: absolute;
+  top: 25%;
+  height: 50%;
+  width: 100%;
+  background-image: url("images/wikiViewer.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 0 10px 10px rgba(0,0,0,0.5), 0 -5px 10px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 10px 10px rgba(0,0,0,0.5), 0 -5px 10px rgba(0,0,0,0.5);
+  box-shadow: 0 10px 10px rgba(0,0,0,0.5), 0 -5px 10px rgba(0,0,0,0.5);
+}
+
+.blueImage:hover{
+  background-image: url("images/wikiViewer.gif");
+  background-size: cover;
+  transition: 0.2s;
+}
+
 .redImage{
   background-image: url("images/quoteScreenShot.jpg");
   background-size: cover;
@@ -426,12 +447,13 @@ h3{
 .yellow{
   background-color: #FFBB18;
 }
+
 .layer1Lable{
   font-family: "Sarpanch", sans-serif;
   font-style: oblique;
   font-size: 5vh;
-  text-shadow: -2px 0 rgba(0,0,0,0.8);
-  color: #fff;
+  text-shadow: -1px 0 rgba(255,255,255,0.8);
+  color: #000;
 }
 
 .projectLayer2{
@@ -445,30 +467,9 @@ h3{
   will-change: transform;
 }
 
-
-
-@media only screen and (orientation: landscape){
-  .layer2Info p{
-    position: absolute;
-    top: 10%;
-    left: 20%;
-    width: 60%;
-    font-family: "Titillium Web", sans-serif;
-    font-size: 1.8vw;
-    color: #fff;
-  }
-}
-
-@media only screen and (orientation: portrait){
-  .layer2Info p{
-    position: absolute;
-    top: 10%;
-    left: 20%;
-    width: 60%;
-    font-family: "Titillium Web", sans-serif;
-    font-size: 2vh;
-    color: #fff;
-  }
+.layer2Info p{
+  font-family: "Titillium Web", sans-serif;
+  color: #fff;
 }
 
 .projectLink{
@@ -493,7 +494,7 @@ h3{
   .layer2Lable{
     font-family: "Sarpanch", sans-serif;
     font-style: oblique;
-    font-size: 5vh;
+    font-size: 3vh;
     text-shadow: -2px 0 #000;
     color: #fff;
   }
@@ -505,6 +506,11 @@ h3{
     z-index: 3;
 
   }
+
+  .layer2Info p{
+    font-size: 2vh;
+  }
+
   .closeBtn{
     font-family: "Titillium Web", sans-serif;
     font-size: 3vw;
@@ -531,6 +537,11 @@ h3{
     transition: 0.5s;
     z-index: 3;
   }
+
+  .layer2Info p {
+    font-size: 1.8vw;
+  }
+
   .closeBtn{
     font-family: "Titillium Web", sans-serif;
     font-size: 4vh;
