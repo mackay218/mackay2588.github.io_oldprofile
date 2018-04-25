@@ -1165,16 +1165,18 @@ body{
 /**********************/
 /* projects */
 
+.projectLayer1{
+  background-position: center;
+}
 
-  .layer2Info p {
+.layer2Info p {
     position: absolute;
     top: 10%;
     left: 15%;
     width: 70%;
   }
 
-
-  .darkTint{
+.darkTint{
     position: absolute;
     top: 0;
     left: 0;
@@ -1182,11 +1184,11 @@ body{
     width: 100%;
   }
 
-  .darkTint:hover{
+.darkTint:hover{
     opacity: 0;
   }
 
-  .darkTint:hover~.layer1Lable{
+.darkTint:hover~.layer1Lable{
     opacity: 0;
   }
 
@@ -1211,10 +1213,6 @@ body{
   .projectLayer1{
     height:25vh;
     width: 100vw;
-    border-left: 10px solid rgba(255,255,255,0.4);
-    border-right: 10px solid rgba(255,255,255,0.4);
-    border-top: 5px solid rgba(255,255,255,0.2);
-    border-bottom: 5px solid rgba(255,255,255,0.2);
     z-index: 1;
   }
   .layer1Lable{
@@ -1320,10 +1318,6 @@ body{
     position: absolute;
     height: 50vh;
     width: 50vw;
-    border-left: 10px solid rgba(255,255,255,0.4);
-    border-right: 10px solid rgba(255,255,255,0.4);
-    border-top: 5px solid rgba(255,255,255,0.2);
-    border-bottom: 5px solid rgba(255,255,255,0.2);
     z-index: 1;
   }
 
