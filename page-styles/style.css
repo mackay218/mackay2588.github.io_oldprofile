@@ -407,19 +407,18 @@ h3{
   transition: 0.2s;
 }
 
-.blueGIF{
+.gif{
   position: absolute;
-  top: 25%;
-  height: 50%;
+  top: 20%;
   width: 100%;
-  background-image: url("images/wikiViewer.gif");
+  height: 60%;
   background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-box-shadow: 0 10px 10px rgba(0,0,0,0.5), 0 -5px 10px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0 10px 10px rgba(0,0,0,0.5), 0 -5px 10px rgba(0,0,0,0.5);
-  box-shadow: 0 10px 10px rgba(0,0,0,0.5), 0 -5px 10px rgba(0,0,0,0.5);
+  background-size: contain;
 }
 
+.blueGIF{
+  background-image: url("images/wikiViewer.gif");
+}
 
 .blueImage:hover{
   background-image: url("images/wikiViewer.gif");
@@ -434,16 +433,7 @@ h3{
 }
 
 .greenGIF{
-  position: absolute;
-  top: 25%;
-  height: 50%;
-  width: 100%;
   background-image: url("images/twitchStatus.gif");
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-box-shadow: 0 10px 10px rgba(0,0,0,0.5), 0 -5px 10px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0 10px 10px rgba(0,0,0,0.5), 0 -5px 10px rgba(0,0,0,0.5);
-  box-shadow: 0 10px 10px rgba(0,0,0,0.5), 0 -5px 10px rgba(0,0,0,0.5);
 }
 
 .greenImage:hover{
@@ -459,16 +449,19 @@ h3{
 }
 
 .redGIF{
-  position: absolute;
-  top: 25%;
-  height: 50%;
-  width: 100%;
   background-image: url("images/quote.gif");
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-box-shadow: 0 10px 10px rgba(0,0,0,0.5), 0 -5px 10px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0 10px 10px rgba(0,0,0,0.5), 0 -5px 10px rgba(0,0,0,0.5);
-  box-shadow: 0 10px 10px rgba(0,0,0,0.5), 0 -5px 10px rgba(0,0,0,0.5);
+}
+
+@media only screen and (orientation: landscape){
+  .redGIF{
+    background-size: contain;
+  }
+}
+
+@media only screen and (orientation: portrait){
+  .redGIF{
+    background-size: cover;
+  }
 }
 
 .redImage:hover{
@@ -479,6 +472,22 @@ h3{
 
 .yellow{
   background-color: #FFBB18;
+}
+
+.yellowImage{
+  background-image:  url("images/cppHome.png");
+  background-size: cover;
+  transition: 0.2s
+}
+
+.yellowGIF{
+  background-image: url("images/cpp.gif");
+}
+
+.yellowImage:hover{
+  background-image:  url("images/cpp.gif");
+  background-size: cover;
+  transition: 0.2s
 }
 
 .layer1Lable{

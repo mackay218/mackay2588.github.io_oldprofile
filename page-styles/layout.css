@@ -114,14 +114,7 @@ body{
     left: -10vw;
   }
 }
-#particles-js{
-  height: 100%;
-  width: 100vw;
-  min-height: 400px;
-  grid-row: 1/4;
-  grid-column: 1/4;
-  z-index: 2;
-}
+
 #arrowContainer{
   position: absolute;
   bottom: 20vh;
@@ -1174,7 +1167,7 @@ body{
     top: 10%;
     left: 15%;
     width: 70%;
-  }
+}
 
 .darkTint{
     position: absolute;
@@ -1182,15 +1175,15 @@ body{
     left: 0;
     height: 100%;
     width: 100%;
-  }
+}
 
 .darkTint:hover{
     opacity: 0;
-  }
+}
 
 .darkTint:hover~.layer1Lable{
     opacity: 0;
-  }
+}
 
 @media only screen and (orientation: portrait){
   #projects{
@@ -1286,7 +1279,7 @@ body{
   .projectLink{
     position: absolute;
     bottom: 10%;
-    left: 40%;
+    left: 35%;
   }
 
   .closeBtn{
